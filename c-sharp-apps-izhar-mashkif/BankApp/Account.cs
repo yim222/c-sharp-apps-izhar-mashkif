@@ -13,15 +13,15 @@ namespace c_sharp_apps_izhar_mashkif.BankApp
 
         private double balance = 0;
 
-        private const int maxOverDraft = 90_000;
+        private const int MAX_OVERDRAFT = 90_000;
 
-        private int overDraft = 0;
+        private int overdraft = 0;
 
         public Account(Owner owner, double balance, int overDraft)
         {
             this.owner = owner;
             this.balance = balance;
-            this.overDraft = overDraft;
+            this.overdraft = overDraft;
         }
 
 
@@ -34,7 +34,7 @@ namespace c_sharp_apps_izhar_mashkif.BankApp
         }
         public double GetBalance() { return balance; }
 
-        public int GetOverDraft() { return overDraft; }
+        public int GetOverDraft() { return overdraft; }
 
 
 
@@ -43,12 +43,12 @@ namespace c_sharp_apps_izhar_mashkif.BankApp
 
         public void SetOverdraft(int overdraft)
         {
-            if(overdraft > maxOverDraft)
+            if(overdraft > MAX_OVERDRAFT)
             {
-                Console.WriteLine("You cannot do overdraft more than " + maxOverDraft);
+                Console.WriteLine("You cannot do overdraft more than " + MAX_OVERDRAFT);
                 return;
             }
-            this.overDraft = overdraft;
+            this.overdraft = overdraft;
         }
 
         public void Deposit(double amount)
@@ -58,7 +58,7 @@ namespace c_sharp_apps_izhar_mashkif.BankApp
 
         public void Withdraw(double amount)
         {
-            if(this.balance - amount < -overDraft)
+            if(this.balance - amount < -overdraft)
             {
                 Console.WriteLine("You cannot exceed the overdraft  " );
                 return;
