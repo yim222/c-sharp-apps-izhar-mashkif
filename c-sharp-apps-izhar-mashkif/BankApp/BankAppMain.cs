@@ -8,7 +8,10 @@ namespace c_sharp_apps_izhar_mashkif.BankApp
 {
     public class BankAppMain
     {
-        public static void MainEntry ()
-        { Console.WriteLine("BankApp"); }
+        public static void MainEntry()
+        {
+            Console.WriteLine("BankApp");
+            TestAccount.Test1();
+        }
     }
 }
