@@ -60,6 +60,7 @@ namespace c_sharp_apps_izhar_mashkif.BankApp
             if(this.balance - amount < -overDraft)
             {
                 Console.WriteLine("You cannot exceed the overdraft  " );
+                return;
             }
             this.balance -= amount;
         }
