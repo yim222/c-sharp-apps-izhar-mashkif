@@ -17,11 +17,11 @@ namespace c_sharp_apps_izhar_mashkif.BankApp
 
         private int overdraft = 0;
 
-        public Account(Owner owner, double balance, int overDraft)
+        public Account(Owner owner, double balance, int overdraft)
         {
             this.owner = owner;
             this.balance = balance;
-            this.overdraft = overDraft;
+            this.overdraft = overdraft;
         }
 
 
