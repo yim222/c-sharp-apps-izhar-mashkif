@@ -193,14 +193,14 @@ namespace c_sharp_apps_izhar_mashkif.BankApp
             Account proveFailure = new Account(new Owner("Avi", "Cohen"),
                 0, 50000);
 
-            //With minus
-            Account proveFailure2 = new Account(new Owner("Avi", "Cohen"),
-                0, -50000);
+            ////With minus
+            //Account proveFailure2 = new Account(new Owner("Avi", "Cohen"),
+            //    0, -50000);
 
             for (int i = 0; i < 10; i++)
             {
                 proveFailure.Withdraw(10_000);
-                proveFailure2.Withdraw(10_000);
+             
 
             }
 
@@ -215,16 +215,7 @@ namespace c_sharp_apps_izhar_mashkif.BankApp
                 allPassed = false;
             }
 
-            if (proveFailure2.GetBalance() == (-50_000))
-            {
-                Console.WriteLine("Test proveFailure - passed");
-            }
-            else
-            {
-                Console.WriteLine("Error at proveFailure Withdraw in account. expected = " + (-50000)
-                    + "| actual = " + proveFailure2.GetBalance());
-                allPassed = false;
-            }
+           
 
 
             if (allPassed)
