@@ -13,15 +13,15 @@ namespace c_sharp_apps_izhar_mashkif.BankApp
 
         private double balance = 0;
 
-        private const int MAX_OVERDRAFT = 90_000;
+        private const int MAX_OVERDRAFT = 90_000;//positive
 
-        private int overdraft = 0;
+        private int overdraft = 0;//positive
 
         public Account(Owner owner, double balance, int overdraft)
         {
             this.owner = owner;
             this.balance = balance;
-            this.overdraft = overdraft;
+            this.overdraft = overdraft;//positive value
         }
 
 
