@@ -1,6 +1,5 @@
 ﻿using c_sharp_apps_izhar_mashkif.Common;
 
-
-long num = 600851475143;
-Console.WriteLine(num);
+int i = 56;
+System.Console.WriteLine("=" + (int)System.Math.Round( i*1.1) );
 ProcessManager.RunMainProcess();
