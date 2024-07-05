@@ -68,7 +68,7 @@ namespace c_sharp_apps_izhar_mashkif.BankApp
 
         public override string ToString()
         {
-            return $"Owner = {owner.GetFirstName()} {owner.GetLastName}\n" +
+            return $"Owner = {owner.GetFirstName()} {owner.GetLastName()}\n" +
                 $"balance = {balance}";
         }
 

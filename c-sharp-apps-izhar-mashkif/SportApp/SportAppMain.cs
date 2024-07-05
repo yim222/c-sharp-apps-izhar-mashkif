@@ -9,6 +9,10 @@ namespace c_sharp_apps_izhar_mashkif.SportApp
     public class SportAppMain
     {
         public static void MainEntry()
-        { Console.WriteLine("SportApp"); }
+        {
+            
+            Console.WriteLine("SportApp");
+            TestSportApp.Test1();
+        }
     }
 }
