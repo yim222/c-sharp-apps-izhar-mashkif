@@ -74,7 +74,7 @@ namespace c_sharp_apps_izhar_mashkif.TransportationApp
 
         private int GetMaxPossilbeSeats()
         {
-            int possibleSeats = Seats - 5;
+            int possibleSeats = Seats - 7;
            
             return possibleSeats;
         }

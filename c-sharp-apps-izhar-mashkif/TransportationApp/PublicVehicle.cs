@@ -37,13 +37,15 @@ namespace c_sharp_apps_izhar_mashkif.TransportationApp
         private int currentPassengers = 0;
         private int seats = 0;
         private bool hasRoom = true;
+        private int rejecetedPassengers = 0;
+
         public int Line { get => line; set => line = value; }
         public int Id { get => id; set => id = value; }
         public virtual int MaxSpeed
         {
             get => maxSpeed; set{
 
-                if (maxSpeed <= 40)
+                if (value <= 40)
                 {
                     maxSpeed = value;
                 }
@@ -52,7 +54,6 @@ namespace c_sharp_apps_izhar_mashkif.TransportationApp
         }
 
         public int CurrentPassengers { get => currentPassengers; set => currentPassengers = value; }
-        private int rejecetedPassengers = 0;
         public bool HasRoom { get => hasRoom; set => hasRoom = value; }
         public int Seats { get => seats; set => seats = value; }
         public int RejecetedPassengers { get => rejecetedPassengers; set => rejecetedPassengers = value; }

@@ -27,7 +27,7 @@ namespace c_sharp_apps_izhar_mashkif.TransportationApp
             get => maxSpeed; set
             {
 
-                if (maxSpeed <= 120)
+                if (value <= 120)
                 {
                     maxSpeed = value;
                 }

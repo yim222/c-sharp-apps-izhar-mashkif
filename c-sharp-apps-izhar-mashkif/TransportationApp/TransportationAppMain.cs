@@ -9,6 +9,12 @@ namespace c_sharp_apps_izhar_mashkif.TransportationApp
     public class TransportationAppMain
     {
         public static void MainEntry()
-        { Console.WriteLine("TransportationApp"); }
+        { 
+            
+            Console.WriteLine("TransportationApp"); 
+            MonitorTransportation monitorTransportation = new MonitorTransportation();
+            monitorTransportation.Test1();
+        
+        }
     }
 }
