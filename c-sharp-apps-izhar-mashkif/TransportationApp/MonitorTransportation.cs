@@ -12,7 +12,7 @@ namespace c_sharp_apps_izhar_mashkif.TransportationApp
         {
             //TODO: 
 
-            //10 tests:
+            //some tests:
             // public PublicVehicle(int line, int id, int maxSpeed, int seats)
             PublicVehicle p1 = new PublicVehicle(18, 8099065, 50, 80);
             Bus bus = new Bus(1, 2033355, 110, 50, 3);//int line, int id, int maxSpeed, int seats, int doors
