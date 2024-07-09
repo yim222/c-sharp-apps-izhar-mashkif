@@ -37,7 +37,7 @@ namespace c_sharp_apps_izhar_mashkif.TransportationApp
 
             if (bus.MaxSpeed != 110)
             {
-                Console.WriteLine("Test 2 Error - Max Speed should be {0} but actual is {1}", 110, p1.MaxSpeed);
+                Console.WriteLine("Test 2 Error - Max Speed should be {0} but actual is {1}", 110, bus.MaxSpeed);
                 allPassed = false;
             }
             else
@@ -49,7 +49,7 @@ namespace c_sharp_apps_izhar_mashkif.TransportationApp
 
             if (bus.MaxSpeed != 110)
             {
-                Console.WriteLine("Test 3 Error - Max Speed should be {0} but actual is {1}", 110, p1.MaxSpeed);
+                Console.WriteLine("Test 3 Error - Max Speed should be {0} but actual is {1}", 110, bus.MaxSpeed);
                 allPassed = false;
             }
             else
@@ -139,7 +139,7 @@ namespace c_sharp_apps_izhar_mashkif.TransportationApp
             passengersTrain1.UploadPassengers(405);
 
 
-            if (passengersTrain1.CurrentPassengers == 701 && passengersTrain1.RejecetedPassengers == 139
+            if (passengersTrain1.CurrentPassengers == 700 && passengersTrain1.RejecetedPassengers == 139
                 && !passengersTrain1.HasRoom )
             {
                 Console.WriteLine("Test 8 Passed ");
@@ -152,6 +152,24 @@ namespace c_sharp_apps_izhar_mashkif.TransportationApp
                   "And rejected should be {2} but actual is {3} and HasRoom should be False, but actual is {4}", 700, passengersTrain1.CurrentPassengers,
                   139, passengersTrain1.RejecetedPassengers, passengersTrain1.HasRoom);
                 allPassed = false;
+
+            }
+
+
+          //Check that each crone is a different object...
+
+
+            if (passengersTrain1.Crones[0].Equals(passengersTrain1.Crones[1]))
+            {
+                Console.WriteLine("Test 9 Error - each crone of the train should be different instance. ");
+                allPassed = false;
+
+
+            }
+            else
+            {
+
+                Console.WriteLine("Test 9 Passed");
 
             }
 

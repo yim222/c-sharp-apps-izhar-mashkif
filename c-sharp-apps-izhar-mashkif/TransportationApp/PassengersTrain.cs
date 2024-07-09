@@ -37,6 +37,10 @@ namespace c_sharp_apps_izhar_mashkif.TransportationApp
 
             }
         }
+
+        public Crone[] Crones { get => crones; set => crones = value; }
+        public int CronesAmount { get => cronesAmount; set => cronesAmount = value; }
+
         public override void UploadPassengers(int amt)
         {
             //use has room
