@@ -3,10 +3,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using c_sharp_apps_izhar_mashkif.MyDataApp;
 
 namespace c_sharp_apps_izhar_mashkif.SportApp
 {
-    public class GeneralPlayer
+    public class GeneralPlayer : InterfaceData
     {
 
         private int points = 0;
@@ -29,6 +30,12 @@ namespace c_sharp_apps_izhar_mashkif.SportApp
            
         }
 
+        public string GenerateData()
+        {
+            return "player is " + name;
+        }
+
+        public void Do1() { Console.WriteLine("Do nothing general player"); }
         public string ScoreName { get => scoreName; set => scoreName = value; }
         public int Assists { get => assists; set => assists = value; }
         public int Fouls { get => fouls; set => fouls = value; }

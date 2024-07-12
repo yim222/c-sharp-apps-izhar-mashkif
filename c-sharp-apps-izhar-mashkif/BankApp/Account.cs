@@ -3,10 +3,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using c_sharp_apps_izhar_mashkif.MyDataApp;
 
 namespace c_sharp_apps_izhar_mashkif.BankApp
 {
-    public class Account
+    public class Account : InterfaceData
     {
 
         private Owner owner = null;
@@ -24,9 +25,16 @@ namespace c_sharp_apps_izhar_mashkif.BankApp
             this.overdraft = overdraft;//positive value
         }
 
+        public string GenerateData()
+        {
+
+            return ToString();
+        }
 
 
-
+        public void Do1() {
+            Console.WriteLine("do nothing in account");
+        }
          //getters
         public Owner GetOwner()
         {

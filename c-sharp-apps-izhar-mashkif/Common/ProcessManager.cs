@@ -2,6 +2,7 @@
 using c_sharp_apps_izhar_mashkif.DraftApp;
 using c_sharp_apps_izhar_mashkif.SportApp;
 using c_sharp_apps_izhar_mashkif.TransportationApp;
+using c_sharp_apps_izhar_mashkif.MyDataApp;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -18,7 +19,10 @@ namespace c_sharp_apps_izhar_mashkif.Common
             do
             {
                 Console.WriteLine("Choose one options: ");
-                Console.WriteLine("1 – Bank App | 2 – Sport App | 3 – Transportation App | 4 – Draft App | 0- Exit");
+                Console.WriteLine("1 – Bank App | 2 – Sport App | 3 – Transportation App " +
+                    "4 – Draft App |" +
+                    "| 5 – MyData App |"
+                   + " 0- Exit");
 
                 choose = int.Parse(Console.ReadLine());
                 {
@@ -38,6 +42,9 @@ namespace c_sharp_apps_izhar_mashkif.Common
                             break;
                         case 4:
                             DraftAppMain.MainEntry();
+                            break;
+                        case 5:
+                            MyDataAppMain.MainEntry();
                             break;
                     }
 
