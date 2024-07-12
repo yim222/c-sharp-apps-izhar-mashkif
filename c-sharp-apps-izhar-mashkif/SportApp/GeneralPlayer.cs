@@ -32,7 +32,7 @@ namespace c_sharp_apps_izhar_mashkif.SportApp
 
         public string GenerateData()
         {
-            return "player is " + name;
+            return "My Favorite player is " + name;
         }
 
         public void Do1() { Console.WriteLine("Do nothing general player"); }
