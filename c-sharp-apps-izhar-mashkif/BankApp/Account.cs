@@ -56,6 +56,12 @@ namespace c_sharp_apps_izhar_mashkif.BankApp
                 Console.WriteLine("You cannot do overdraft more than " + MAX_OVERDRAFT);
                 return;
             }
+
+            if (overdraft < 0)
+            {
+                Console.WriteLine("Overdraft shouldn't be negative ");
+                return;
+            }
             this.overdraft = overdraft;
         }
 
