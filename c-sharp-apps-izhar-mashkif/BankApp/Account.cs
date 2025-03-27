@@ -62,11 +62,14 @@ namespace c_sharp_apps_izhar_mashkif.BankApp
         public void Deposit(double amount)
         {
             this.balance += amount;
+            this.balance -= 7;
         }
 
         public void Withdraw(double amount)
         {
-            if(this.balance - amount < -overdraft)
+            //if(this.balance - amount < -overdraft)
+            if (Math.Abs( this.balance - amount)  >  overdraft)
+
             {
                 Console.WriteLine("You cannot exceed the overdraft  " );
                 return;

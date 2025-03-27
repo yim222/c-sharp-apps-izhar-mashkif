@@ -9,7 +9,7 @@ namespace c_sharp_apps_izhar_mashkif.BankApp
     public class Owner
     {
 
-        private string firstName;
+        private string firstName = "";
 
         private string lastName;
 
@@ -19,8 +19,8 @@ namespace c_sharp_apps_izhar_mashkif.BankApp
 
         public Owner(string firstName, string lastName)
         {
-            this.firstName = firstName;
-            this.lastName = lastName;
+            //this.firstName = firstName;
+            this.lastName = lastName; 
            
         }
 
